@@ -1,0 +1,27 @@
+.nav {
+  &-item {
+    .nav-link {
+      color: red;
+      &.active {
+        color: green;
+      }
+      &:hover {
+        color: brown;
+      }
+    }
+    p {
+      color: blue;
+    }
+
+  }
+  .services & {
+    background: {
+      color: black;
+    };
+  }
+  .home & {
+    background: {
+      color: lightgray;
+    };
+  }
+}
