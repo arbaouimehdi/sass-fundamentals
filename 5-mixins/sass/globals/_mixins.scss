@@ -1,0 +1,5 @@
+@mixin danger($border-size: 1px, $text-color: $danger-700) {
+  border: $border-size solid $danger-700;
+  background-color: $danger-100;
+  color: $text-color;
+}
