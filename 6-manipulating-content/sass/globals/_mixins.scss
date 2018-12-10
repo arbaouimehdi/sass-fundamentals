@@ -1,0 +1,16 @@
+/*
+*
+* Phone
+*
+*/
+@mixin phone {
+
+  // Non-Retina Screens
+  @media screen 
+  and (min-device-width: $phone-min-width)
+  and (max-device-width: $phone-max-width) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    @content;
+  }
+}
+
