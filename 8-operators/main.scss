@@ -1,0 +1,77 @@
+/*! Equality Operations
+*
+* equality:    ==
+* inequality: !=
+*
+*
+* Result: 
+* #{20 == 20}
+* #{20 != 20}
+* #{"john" == "john"}
+* #{rgb(0,0,0) != rgb(255,255,255)}
+*/
+
+/* Boolean operations
+*
+* and logic: and
+* or logic:   or
+* not:          !=
+*
+*
+* Result
+* #{true and false}
+* #{true or false}
+* #{true != true}
+*/
+
+/* Numeric Operations (Basic Arithmetic)
+*
+* addition:          +
+* substraction:   -
+* multiplication: *
+* modulo:          %
+* division:          /
+*
+* Result
+* #{ 12 + 3 }
+* #{ 12 -3 }
+* #{ 4 * 5 }
+* #{ (12 / 6) }
+* #{ 13 % 6 }
+*/
+
+/* Comparison
+*
+* equality:                        ==
+* inequality:                     !=
+* less than:                      <
+* greater than:                <
+* less than or equal:       <=
+* greater than or equal: >=
+*
+* Result
+* #{56 < 40}
+* #{56 > 40}
+* #{30 <= 30}
+* #{124 >= 250}
+*/
+
+/* String Operations
+*
+* concatenation: +
+* interpolation:    # {}
+*
+* Result
+* #{"john" + "doe"}
+* #{"john" + doe}
+* #{"johndoe"}
+*/
+
+/*  Color Operations
+*
+* colors arithmetic (-, +, /, *, %)
+*
+* Result
+* #{#0cff00 + #22006a}
+* #{rgb(12, 255, 0) + rgb(34, 0, 106)}
+*/

@@ -1,8 +1,5 @@
 @import "globals/reset";
-@import "globals/variables";
-
 @import "globals/mixins";
-
 
 /*
 *
@@ -11,7 +8,7 @@
 */
 
 %shadow {
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4)
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
 %bg-error {
@@ -39,7 +36,6 @@
     font-size: 14px;
   }
 }
-
 
 .content-1 {
   // @include content;
