@@ -1,0 +1,26 @@
+.list-item {
+  // variables
+  $num: 0;
+
+  border: 1px solid #c7c7c7;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #000;
+  border-radius: 4px;
+  color: #fff;
+
+  @while $num < 6 {
+    $num: $num + 1;
+    // @debug ($num);
+    &:nth-child(#{$num}) {
+      opacity: 1 - ($num / 10);
+    }
+  }
+
+  // @for $i from 1 through 6 {
+  //   &:nth-child(#{$i}) {
+  //     // @debug ($i / 10);
+  //     opacity: 1 - ($i / 10);
+  //   }
+  // }
+}
