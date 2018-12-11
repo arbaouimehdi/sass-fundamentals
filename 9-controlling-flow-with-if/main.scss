@@ -1,0 +1,23 @@
+$bg-color: #a5fa94;
+
+@mixin CheckBgLightness($BgColor) {
+  // if the background color is light
+  @if lightness($BgColor) > 50% {
+    color: #444;
+  }
+  // if the background is dark
+  @else if lightness($BgColor) < 50% {
+    color: #fff;
+  }
+  // If the previous conditions are not met
+  @else {
+    color: #000;
+  }
+}
+
+body {
+  background-color: $bg-color;
+  @include CheckBgLightness($bg-color);
+}
+
+@debug (lightness($bg-color));
