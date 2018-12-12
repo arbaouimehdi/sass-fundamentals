@@ -1,0 +1,31 @@
+/*
+*
+*
+* Lists
+*
+*
+*/
+.item {
+  // Global Styles
+  margin-bottom: 10px;
+  padding: 60px 15px;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #5f5f5f;
+
+  &.bg-pattern {
+    // Variables
+    $bg-patterns: "darknoise.png", "hexdark.png",
+      "illusion.png";
+
+    @for $i from 1 through length($bg-patterns) {
+      @debug ($i);
+      &:nth-child(#{$i}) {
+        background-image: url("../images/"+nth(
+            $bg-patterns,
+            $i
+          ));
+      }
+    }
+  }
+}
