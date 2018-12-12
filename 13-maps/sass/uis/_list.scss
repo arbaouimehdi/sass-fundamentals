@@ -1,0 +1,29 @@
+/*
+*
+*
+* Maps
+*
+*
+*/
+// Variables
+$red-shades: (
+  200: #ef9a9a,
+  400: #ef5350,
+  300: #e57373,
+  500: #f44336,
+);
+
+// @debug (map-get($map: $red-shades, $key: 400));
+
+.item {
+  // Global Styles
+  margin-bottom: 10px;
+  padding: 60px 15px;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #5f5f5f;
+
+  &.bg-material {
+    background: map-get($map: $red-shades, $key: 500);
+  }
+}
