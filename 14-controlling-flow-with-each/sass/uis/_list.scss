@@ -1,0 +1,28 @@
+$primary-theme: (
+  bg: #32333b,
+  title: #fff,
+  content: #a6a9b0,
+  link: #57c23c,
+);
+
+%articles-primary-theme {
+  @each $key, $value in $primary-theme {
+    @if ($key == bg) {
+      .article {
+        background-color: $value;
+      }
+    }
+    .article-#{$key} {
+      color: $value;
+    }
+  }
+}
+
+.articles {
+  @extend %articles-primary-theme;
+
+  .article {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+}
