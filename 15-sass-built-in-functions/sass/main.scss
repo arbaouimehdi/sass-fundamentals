@@ -1,0 +1,114 @@
+@import "globals/reset";
+
+/*
+* 
+* Colors Functions
+*
+*/
+
+//? RGB
+// mix($color1, $color2, [$weight]) => color
+body {
+  background-color: mix(
+    $color1: #d64747,
+    $color2: #3e96e9,
+    $weight: 20%
+  );
+}
+
+//? HSL
+// lighten($color, $amount) => color
+body {
+  background-color: lighten($color: #1a1469, $amount: 30%);
+}
+
+//? Opacity
+// transparentize($color, $amount) => color
+.square {
+  background-color: transparentize(
+    $color: #000000,
+    $amount: 0.7
+  );
+}
+
+//? Other
+// adjust-color($color) => color
+body {
+  background-color: adjust-color(
+    $color: #d42fd4,
+    $hue: 10,
+    $saturation: 15%,
+    $lightness: 20%
+  );
+}
+
+/*
+*
+* Data Types Functions
+*
+*/
+
+//? String
+// str-length($string) => number
+$first-name: "john";
+@debug (str-length($first-name));
+
+//? Number
+// min($numbers) => number
+$num1: 234;
+$num2: 57;
+$num3: 128;
+@debug (min($num1, $num2, $num3));
+
+//? List
+// index($list, $value) => index number
+$primary-colors: #1a1469 #2bd8d8 #775844;
+@debug (index($primary-colors, #2bd8d8));
+
+//? Map
+// map-keys($map) => list
+$selectors-colors: (
+  h1: #4d4d4d,
+  li: #1f1f1f,
+);
+@debug (map-keys(($selectors-colors)));
+
+/*
+*
+* Selector Functions
+*
+*/
+// selector-nest($selectors) => .foo .bar .baz { color: red; }
+
+#{selector-nest(".foo", ".bar", ".baz")} {
+  color: red;
+}
+
+// selector-append($selectors) => .selector-1.selector-2 { color: red; }
+#{selector-append(".selector-1", ".selector-2")} {
+  color: red;
+}
+
+/*
+*
+* Introspection Functions
+*
+*/
+// global-variable-exists($variable-name) => boolean (true OR false)
+$margin-size: 10px;
+.item {
+}
+
+@debug (global-variable-exists(margin-size));
+
+$margin-size: 10; // number
+$class-name: "foo"; // string
+$status: true; // boolean
+$font-color: #444; // color
+$selectors: body ul em; // list
+$red-shades: (
+  100: #f78080,
+  200: #c54848,
+); // map
+
+@debug (type-of($selectors));
