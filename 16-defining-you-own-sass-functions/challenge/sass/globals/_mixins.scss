@@ -1,0 +1,22 @@
+/*
+*
+* Generate Related Colors
+*
+*/
+@mixin generate-related-colors($selector: ".colors") {
+  #{$selector} {
+    $related-colors: related-colors(#ce551d, 10);
+
+    > div {
+      @for $i from 1 through length($related-colors) {
+        &:nth-child(#{$i}) {
+          $color: nth($related-colors, $i);
+          background: nth($related-colors, $i);
+          &:before {
+            content: "#{$color}";
+          }
+        }
+      }
+    }
+  }
+}

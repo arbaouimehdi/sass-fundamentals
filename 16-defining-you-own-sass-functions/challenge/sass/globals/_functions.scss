@@ -1,0 +1,21 @@
+/*
+*
+* Find related Colors
+*
+*/
+@function related-colors(
+  $base-color: #bada55,
+  $number: 20
+) {
+  $adjusted-colors: ();
+  @for $i from 1 through $number {
+    $hue-offset: 90deg / $number * ($i - 1);
+    $adjusted-hue: adjust-hue($base-color, $hue-offset);
+    $adjusted-colors: append(
+      $adjusted-colors,
+      $adjusted-hue
+    );
+  }
+
+  @return $adjusted-colors;
+}

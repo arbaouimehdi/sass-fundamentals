@@ -1,0 +1,31 @@
+/*
+*
+* Retrieve color by key
+* @author: bootstrap
+*
+*/
+
+//? variable
+$primary-colors: (
+  blue: #205aa7,
+  red: #cf1c1c,
+  green: #4ae436,
+  pink: #e428cb,
+);
+
+//? function
+@function get-color($colors-list, $color) {
+  // Go through each element of the map
+  @each $key, $hex-color in $colors-list {
+    // Find the element of the selected key
+    @if ($key == $color) {
+      @return $hex-color;
+    }
+  }
+}
+
+//? result
+@debug (get-color($primary-colors, green));
+
+//! equivalent
+@debug (map-get($primary-colors, green));

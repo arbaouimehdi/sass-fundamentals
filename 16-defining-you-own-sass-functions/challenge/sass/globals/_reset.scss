@@ -1,0 +1,25 @@
+body {
+  background: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+}
+
+.colors {
+  > div {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    background: #fff;
+
+    &:before {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      line-height: 5em;
+      color: rgba(255, 255, 255, 0.363);
+    }
+  }
+}
