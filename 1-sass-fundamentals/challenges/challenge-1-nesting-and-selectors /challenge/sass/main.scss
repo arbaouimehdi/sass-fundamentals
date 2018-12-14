@@ -1,0 +1,59 @@
+/*
+*
+* Reset Style
+*
+*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+/*
+*
+* Convert this CSS presentation bellow to Sass presentation
+*
+*/
+
+.alert {
+  margin: 10px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+// 1 - "a" should be nested within ".alert"
+.alert a {
+  text-decoration: none;
+}
+
+// 2 - ":hover" and ".alert a" are at the same level
+.alert a:hover {
+  text-decoration: underline;
+}
+
+// 3 - ".alert" and ".alert-danger" are at the same level
+.alert.alert-danger {
+  border: 1px solid #f5c6cb;
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+// 4 - ".alert-danger" is nested within ".alert-link"
+.alert .alert-danger .alert-link {
+  color: #c73c49;
+}
+
+/*
+* 5 - ".home" should be nested within the ".alert" selector not the opposite
+*
+* - This Sass presentation is not allowed for this part of the challenge:
+*.home {
+*  .alert {
+*    
+*  }
+* }
+*/
+.home .alert {
+  // 6 - "size" and "style" should be nested within "font"
+  font-size: 12px;
+  font-style: italic;
+}
