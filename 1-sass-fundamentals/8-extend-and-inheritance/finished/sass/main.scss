@@ -1,9 +1,9 @@
 @import "globals/reset";
-@import "globals/mixins";
+
 
 /*
 *
-* Content
+* Modifiers
 *
 */
 
@@ -20,6 +20,12 @@
   background: rgb(179, 247, 170);
   color: rgb(49, 117, 69);
 }
+
+/*
+*
+* Content
+*
+*/
 
 %content {
   border-radius: 5px;
@@ -38,13 +44,11 @@
 }
 
 .content-1 {
-  // @include content;
   @extend %content;
   @extend %bg-error;
 }
 
 .content-2 {
-  // @include content;
   @extend %content;
   @extend %bg-success;
 }
