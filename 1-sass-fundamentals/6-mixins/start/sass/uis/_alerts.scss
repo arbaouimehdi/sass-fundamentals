@@ -1,0 +1,23 @@
+/*
+*
+* Alerts
+*
+*/
+.alert {
+  margin: 10px;
+  padding: 15px;
+  border-radius: 5px;
+
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &-danger {
+    .alert-link {
+      color: $danger-600;
+    }
+  }
+}
