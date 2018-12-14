@@ -1,0 +1,11 @@
+// 1 - Create a mixin using the name "danger"
+
+// 2 - The mixin uses two arguments "border-size" and "text-color":
+// 2.1 - The mixin argument "border-size" has a default value of "1px"
+// 2.2 - The mixin argument "$text-color" has as default value of "$danger-700"
+
+// 3 - The body of the mixin "danger" after the curly braces should include this list
+// of properties:
+// - "border" : "border-size" solid "danger-700"
+// - "background-color" : "danger-100"
+// - "color" : "text-color"
