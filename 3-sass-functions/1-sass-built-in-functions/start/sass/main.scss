@@ -1,0 +1,76 @@
+@import "globals/reset";
+
+/*
+* 
+* Colors Functions
+*
+*/
+
+//? RGB
+// mix($color1, $color2, [$weight]) => color
+body {
+}
+
+//? HSL
+// lighten($color, $amount) => color
+body {
+}
+
+//? Opacity
+// transparentize($color, $amount) => color
+.square {
+}
+
+//? Other
+// adjust-color($color) => color
+body {
+}
+
+/*
+*
+* Data Types Functions
+*
+*/
+
+//? String
+// str-length($string) => number
+
+//? Number
+// min($numbers) => number
+
+//? List
+// index($list, $value) => index number
+
+//? Map
+// map-keys($map) => list
+
+/*
+*
+* Selector Functions
+*
+*/
+// selector-nest($selectors) => .foo .bar .baz { color: red; }
+
+// selector-append($selectors) => .selector-1.selector-2 { color: red; }
+
+/*
+*
+* Introspection Functions
+*
+*/
+// global-variable-exists(variable-name) => boolean (true OR false)
+.item {
+  $margin-size: 10px;
+}
+
+// type-of($variable-name) => value type
+
+$margin-size: 10; // number
+$class-name: "foo"; // string
+$status: true; // boolean
+$font-color: #444; // color
+$selectors: body ul em; // list
+$red-shades: (
+  100: #f78080,
+  200: #c54848,
+); // map
