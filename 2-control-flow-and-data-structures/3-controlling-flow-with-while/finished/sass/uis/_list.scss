@@ -1,6 +1,6 @@
 .list-item {
   // variables
-  $num: 0;
+  $num: 1;
 
   border: 1px solid #c7c7c7;
   padding: 20px;
@@ -16,11 +16,4 @@
       opacity: 1 - ($num / 10);
     }
   }
-
-  // @for $i from 1 through 6 {
-  //   &:nth-child(#{$i}) {
-  //     // @debug ($i / 10);
-  //     opacity: 1 - ($i / 10);
-  //   }
-  // }
 }
