@@ -1,17 +1,16 @@
-/*
-*
-* Retrieve color by key
-* @author: bootstrap
-*
-*/
-
-//? variable
+//? map
 $primary-colors: (
   blue: #205aa7,
   red: #cf1c1c,
   green: #4ae436,
   pink: #e428cb,
 );
+
+/*
+*
+* Retrieve color by a key
+*
+*/
 
 //? function
 @function get-color($colors-list, $color) {
