@@ -3,3 +3,7 @@ node_modules
 .vscode
 *.map
 *.css
+
+# But not these files
+!*/1-nesting-and-selectors/start/css/main.css
+!*/3-css-variables/*/css/main.css

@@ -1,0 +1,65 @@
+/*
+*
+* Reset Style
+*
+*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*
+*
+* Alerts
+*
+*/
+.alert {
+  margin: 10px;
+  padding: 15px;
+  border-radius: 5px;
+}
+.alert a {
+  text-decoration: none;
+}
+.alert a:hover {
+  text-decoration: underline;
+}
+.alert-danger {
+  border: 1px solid #f5c6cb;
+  background-color: #f8d7da;
+  color: #721c24;
+}
+.alert-danger .alert-link {
+  color: #c73c49;
+}
+
+/*
+*
+* Buttons
+*
+*/
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  padding: 5px 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 5px;
+  color: #fff;
+}
+.btn-danger {
+  background: #721c24;
+}
+.btn-danger:hover {
+  border: 1px solid #f5c6cb;
+  background-color: #f8d7da;
+  color: #721c24;
+}

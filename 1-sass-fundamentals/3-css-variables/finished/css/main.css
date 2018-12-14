@@ -1,0 +1,77 @@
+/*
+*
+* Reset Style
+*
+*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*
+*
+* Variables
+*
+*/
+:root {
+  --danger-700: #721c24;
+  --danger-200: #f5c6cb;
+  --danger-100: #f8d7da;
+}
+
+/*
+*
+* Alerts
+*
+*/
+.alert {
+  margin: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  --alert-link: #c73c49;
+}
+.alert a {
+  text-decoration: none;
+}
+.alert a:hover {
+  text-decoration: underline;
+}
+.alert-danger {
+  border: 1px solid var(--danger-200);
+  background-color: var(--danger-100);
+  color: var(--danger-700);
+}
+.alert-danger .alert-link {
+  color: var(--alert-link);
+}
+
+/*
+*
+* Buttons
+*
+*/
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  padding: 5px 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 5px;
+  color: #fff;
+}
+.btn-danger {
+  background: var(--danger-700);
+}
+.btn-danger:hover {
+  border: 1px solid var(--danger-200);
+  background-color: var(--danger-100);
+  color: var(--danger-700);
+}
