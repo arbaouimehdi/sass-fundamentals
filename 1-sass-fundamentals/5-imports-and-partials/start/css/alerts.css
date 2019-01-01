@@ -1,0 +1,43 @@
+/*
+*
+* Variables
+*
+*/
+/*
+*
+* Alerts
+*
+*/
+.alert {
+  margin: 10px;
+  padding: 15px;
+  border-radius: 5px;
+}
+.alert a {
+  text-decoration: none;
+}
+.alert a:hover {
+  text-decoration: underline;
+}
+.alert-danger {
+  border: 1px solid #f5c6cb;
+  background-color: #f8d7da;
+  color: #721c24;
+}
+.alert-danger .alert-link {
+  color: #c73c49;
+}
+.alert-warning {
+  border: 1px solid #e0ce98;
+  background-color: #fff3cd;
+  color: #856404;
+}
+.alert-warning .alert-link {
+  color: #9e8b4f;
+}
+.home .alert {
+  font-size: 18px;
+  font-style: italic;
+}
+
+/*# sourceMappingURL=alerts.css.map */
