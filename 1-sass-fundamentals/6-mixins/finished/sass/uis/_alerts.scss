@@ -16,7 +16,9 @@
   }
 
   &-danger {
-    @include danger;
+    border: 1px solid $danger-700;
+    background-color: $danger-100;
+    color: $danger-700;
 
     .alert-link {
       color: $danger-600;
