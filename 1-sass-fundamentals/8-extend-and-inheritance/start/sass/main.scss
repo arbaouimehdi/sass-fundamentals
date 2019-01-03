@@ -1,26 +1,6 @@
 @import "globals/reset";
 @import "globals/mixins";
 
-
-/*
-*
-* Content
-*
-*/
-.content {
-  border-radius: 5px;
-  border: 1px solid gray;
-  margin-bottom: 10px;
-  padding: 10px;
-
-  h1 {
-    font-size: 20px;
-  }
-  p {
-    font-size: 14px;
-  }
-}
-
 .content-1 {
   @include content;
 }
