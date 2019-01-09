@@ -1,0 +1,15 @@
+@import "style1.css";
+/* @import "style2.css"; */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  background: #ccc;
+}
+
+.dark-header {
+  background: #444;
+  color: #ccc;
+}

@@ -5,6 +5,7 @@ node_modules
 *.css
 
 # But not these files
+!/0-why-sass-and-not-css/*/css/*.css
 !*/1-nesting-and-selectors/start/css/main.css
 !*/3-css-variables/*/css/main.css
 !*/5-imports-and-partials/start/css/*
