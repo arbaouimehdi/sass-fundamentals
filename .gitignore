@@ -3,6 +3,7 @@ node_modules
 .vscode
 *.map
 *.css
+*.DS_Store
 
 # But not these files
 !/0-why-sass-and-not-css/*/css/*.css
