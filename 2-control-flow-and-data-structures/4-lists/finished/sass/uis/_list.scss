@@ -15,12 +15,12 @@
 
   &.bg-pattern {
     // Variables
-    $bg-patterns: "darknoise.png", "hexdark.png", "illusion.png";
+    $bg-patterns: "darknoise", "hexdark", "illusion";
 
     @for $i from 1 through length($bg-patterns) {
       @debug ($i);
       &:nth-child(#{$i}) {
-        background-image: url("../../images/"+nth($bg-patterns, $i));
+        background-image: url("../../images/#{nth($bg-patterns, $i)}.png");
       }
     }
   }
